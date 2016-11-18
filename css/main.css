@@ -22,17 +22,31 @@ img {
   display: inline-block;
 }
 
-img:nth-child(2) {
-  display: none;
-}
-
-img:nth-child(4) {
-  display: none;
-}
-
 @media only screen and (min-width: 25em) {
+
   img {
-    width: 49%;
+    width: 80%;
+  }
+
+  img:nth-child(4) {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img {
+    width: 54%;
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    width: 30%;
   }
 
 }
