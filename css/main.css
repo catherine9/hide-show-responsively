@@ -61,10 +61,11 @@ img {
 @media only screen and (min-width: 60em) {
 
   img {
-    width: 35%;
+    width: 20%;
   }
 
-  img:nth-child(odd) {
+  img:nth-child(even) {
     display: inline-block;
   }
+
 }
