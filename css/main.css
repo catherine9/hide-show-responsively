@@ -18,18 +18,30 @@ html {
 }
 
 img {
-  width: 100%;
   display: inline-block;
+}
+
+@media only screen and (min-width: 20em) {
+
+  img {
+    width: 100%;
+  }
+
+  img:nth-child(even) {
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 25em) {
 
   img {
-    width: 80%;
+    width: 49%;
+    display: inline-block;
   }
 
-  img:nth-child(4) {
-    display: none;
+  img:nth-child(even) {
+    display: inline-block;
   }
 
 }
@@ -37,8 +49,11 @@ img {
 @media only screen and (min-width: 38em) {
 
   img {
-    width: 54%;
-    display: none;
+    width: 30%;
+  }
+
+  img:first-child {
+    display: inline-block;
   }
 
 }
@@ -46,7 +61,10 @@ img {
 @media only screen and (min-width: 60em) {
 
   img {
-    width: 30%;
+    width: 35%;
   }
 
+  img:nth-child(odd) {
+    display: inline-block;
+  }
 }
